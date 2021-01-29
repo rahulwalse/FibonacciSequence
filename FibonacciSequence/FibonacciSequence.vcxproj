@@ -139,7 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DetermineFibonacci.cpp" />
+    <ClCompile Include="Fibonacci.cpp" />
     <ClCompile Include="FibonacciSequence.cpp" />
+    <ClCompile Include="LucasSequence.cpp" />
+    <ClCompile Include="NextFibonacci.cpp" />
+    <ClCompile Include="ThreeNumberSequence.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sequencef.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
