@@ -7,7 +7,7 @@
 #include <iostream>
 #include "sequencef.h"
 using namespace std;
-const int FIRSTOPTION = 1, LASTOPTION = 5;
+const int FIRSTOPTION = 1, LASTOPTION = 6;
 
 
 
@@ -21,7 +21,7 @@ int main()
 
         cout << "\n1. Generate Fibonacci sequence\n2. Generate next Fibonacci number by accepting two consecutive Fibonacci numbers";
         cout << "\n3. Generate Lucas sequence (1 3 4 7 11...)\n4. Generate a sequence by adding recent three numbers, where initial terms are 0 1 1";
-        cout << "\n5. Check if the given two numbers are Fibonacci numbers\nEnter your choice: ";
+        cout << "\n5. Check if the given two numbers are Fibonacci numbers\n6. Generate sequence where each term is sum of adjacent factorials\nEnter your choice: ";
         cin >> choice;
 
         if (choice < FIRSTOPTION || choice > LASTOPTION)    /*Check if the choice entered by the user is valid.*/
@@ -82,6 +82,19 @@ int main()
                     cout << "first number=";    cin >> numberOne;
                     cout << "second number=";   cin >> numberTwo;
                     DetermineFibonacci(numberOne, numberTwo);
+                    break;
+
+            case 6: cout << "\nEnter the total number of terms in the sequence to be generated" << endl;
+                    cin >> terms;
+                    if (terms < 1)
+                    {
+                        cout << "\nThe sequence cannot be generated for " << terms << " terms." << endl;
+                        return 0;
+                    }
+                    else
+                    {
+                        AdjacentFactorialSum(terms);
+                    }
                     break;
             }
         }

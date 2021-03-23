@@ -12,5 +12,7 @@ int NextFibonacci(int fibonacciTermOne, int fiboancciTermTwo);
 int LucasSequence(int number);
 int ThreeNumberSequence(int number);
 void DetermineFibonacci(int numberOne, int numberTwo);
+long long Factorial(int number);
+void AdjacentFactorialSum(int number);
 
 #endif /* !SEQUENCEF_H*/

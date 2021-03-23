@@ -139,7 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AdjacentFactorialSum.cpp" />
     <ClCompile Include="DetermineFibonacci.cpp" />
+    <ClCompile Include="Factorial.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
     <ClCompile Include="FibonacciSequence.cpp" />
     <ClCompile Include="LucasSequence.cpp" />
